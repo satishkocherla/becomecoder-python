@@ -1,0 +1,29 @@
+"""
+n=int(input())
+while(n!=0):
+    r=n%10
+    n=n//10
+    print(r,n)
+"""
+"""""
+n=int(input())
+count=0
+while(n):
+    r=n%10
+    n=n//10
+    count+=1
+    print(r,n)
+    print(count)
+
+""""
+n=int(input())
+ec=0
+oc=o
+while(n):
+    r=n%10
+    n=n//10
+    if(r%2==0):
+        print(even)
+    else:
+        print(odd)
+      
