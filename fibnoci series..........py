@@ -12,26 +12,20 @@ n,l,u=map(int,input().split())   #input
 gen_fib(n,l,u)   #func call   gen_fib one arg
 """
 
-
-def gen_fib(l,f):
-    if l==0:
-        print(a,b,end=" ")
-    if l==1:
-        print(b,end=" ")
-    for i in range(3,n+1):
+"""
+def gen_fib(f,l):
+    a,b=0,1
+    for i in range(0,l+1):
         c=a+b
-        print(c,end=" ")
+        if c<=f and c>=l:
+            print(c,end=" ")
         a=b
         b=c
-        if c<l and c>f:
-            print(c,end=" ")
-    
 f,l=map(int,input().split())   #input
 gen_fib(f,l)   #func call   gen_fib one arg
-
-
-
 """
+
+
 def gen_fib(n):
     a,b=0,1
     print(a,b,end=" ")
@@ -40,8 +34,12 @@ def gen_fib(n):
         print(c,end=" ")
         a=b
         b=c
-    
-n=int(input())   #input
+    if f==c:
+        print(True)
+    else:
+        print(False)
+n=int(input())
+f=int(input())#input
 gen_fib(n)   #func call   gen_fib one arg
 
-"""
+
